@@ -11,9 +11,9 @@ export default function App() {
                 <Hero />
             </div>
             <AnimatedCursor
-                innerSize={10}
-                outerSize={10}
-                color='49, 43, 118'
+                innerSize={20}
+                outerSize={20}
+                color='49, 43, 200'
                 outerAlpha={0.5}
                 innerScale={0.7}
                 outerScale={5}
