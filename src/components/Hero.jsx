@@ -4,9 +4,9 @@ import { services } from "../constants";
 
 const Hero = () => {
     return (
-        <div className='min-h-[calc(100vh-64px)] grid grid-cols-1 md:grid-cols-2 place-items-center    text-white '>
+        <div className='px-3 min-h-[calc(100vh-64px)] grid grid-cols-1 md:grid-cols-2 place-items-center    text-white '>
             <div className='flex w-full'>
-                <div className='flex pl-8 flex-col items-center justify-center w-6 h-full mr-6 md:mr-8 '>
+                <div className='flex pl-4 flex-col items-center justify-center w-6 h-full mr-6 md:mr-8 '>
                     <div className='w-10 h-10 bg-indigo-500 rounded-full'></div>
                     <div className='h-[400px] md:h-[500px] w-2 bg-gradient-to-b from-indigo-500'></div>
                 </div>
@@ -16,7 +16,7 @@ const Hero = () => {
                         <br />
                         <span className='text-indigo-400'> Andrew</span>
                     </h1>
-                    <h2 className='font-normal text-xl md:text-3xl text-neutral-200 mt-5'>
+                    <h2 className='font-normal  md:text-3xl text-neutral-200 mt-5'>
                         <TypeAnimation
                             sequence={services}
                             wrapper='span'
@@ -36,7 +36,7 @@ const Hero = () => {
                 <img
                     src='/images/me.png'
                     alt='Andrew'
-                    className='min-w-[250px] max-w-[380px] object-cover  rounded-xl shadow-sm shadow-indigo-800 bg-indigo-400/10'
+                    className='min-w-[250px] max-w-[380px] object-cover  rounded-xl shadow-sm shadow-indigo-800 md:bg-indigo-400/10'
                 />
             </div>
         </div>
