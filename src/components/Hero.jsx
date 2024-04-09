@@ -39,8 +39,8 @@ const Hero = () => {
                     className='w-full max-w-[380px]  md:w-[380px] object-cover  rounded-xl shadow-sm shadow-indigo-800 md:bg-indigo-400/10 z-30'
                 />
 
-                <div className='absolute top-[40px] right-[60px] w-[380px] h-[420px]  bg-indigo-500/20 rounded-xl z-10'></div>
-                <div className='absolute top-[60px] right-[30px] w-[380px] h-[420px]  bg-indigo-500/20 rounded-xl z-20'></div>
+                <div className='absolute top-[80px] right-[60px] w-[380px] h-[420px]  bg-indigo-500/20 rounded-xl z-10'></div>
+                <div className='absolute top-[100px] right-[30px] w-[380px] h-[420px]  bg-indigo-500/20 rounded-xl z-20'></div>
             </div>
         </div>
     );
