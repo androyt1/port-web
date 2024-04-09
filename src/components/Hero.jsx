@@ -7,8 +7,8 @@ const Hero = () => {
         <div className='px-3 min-h-[calc(100vh-64px)] grid grid-cols-1 md:grid-cols-2 place-items-center    text-white '>
             <div className='flex w-full'>
                 <div className='flex pl-4 flex-col items-center justify-center w-6 h-full mr-6 md:mr-8 '>
-                    <div className='w-10 h-10 bg-indigo-500 rounded-full'></div>
-                    <div className='h-[400px] md:h-[500px] w-2 bg-gradient-to-b from-indigo-500'></div>
+                    <div className='w-10 h-10 bg-indigo-500 rounded-full border-t-2 border-white'></div>
+                    <div className='h-[400px] md:h-[500px] w-2 bg-gradient-to-b from-indigo-500 border-t-2 border-white'></div>
                 </div>
                 <div className='flex-1 flex w-full flex-col items-start justify-center pr-3'>
                     <h1 className='font-bold text-4xl md:text-5xl lg:text-7xl pt-3 uppercase tracking-tighter text-left'>
@@ -16,7 +16,7 @@ const Hero = () => {
                         <br />
                         <span className='text-indigo-400'> Andrew</span>
                     </h1>
-                    <h2 className='font-normal  md:text-3xl text-neutral-200 mt-5'>
+                    <h2 className='font-normal  md:text-3xl text-neutral-200 mt-6 md:mt-10'>
                         <TypeAnimation
                             sequence={services}
                             wrapper='span'
@@ -25,8 +25,8 @@ const Hero = () => {
                             className='inline-block text-2xl max-w-[60%]:'
                         />
                     </h2>
-                    <div className='mt-10'>
-                        <button className='py-4 bg-indigo-600 text-slate-50 px-28 rounded-md font-semibold'>
+                    <div className='mt-6 md:mt-10'>
+                        <button className='py-2  bg-indigo-600 text-slate-50 px-20 md:px-24 rounded-md font-normal'>
                             Projects
                         </button>
                     </div>
@@ -36,7 +36,7 @@ const Hero = () => {
                 <img
                     src='/images/me.png'
                     alt='Andrew'
-                    className='min-w-[250px] max-w-[380px] object-cover  rounded-xl shadow-sm shadow-indigo-800 md:bg-indigo-400/10'
+                    className='w-[280px] sm:w-[310px] md:w-[350px] object-cover  rounded-xl shadow-sm shadow-indigo-800 md:bg-indigo-400/10'
                 />
             </div>
         </div>
