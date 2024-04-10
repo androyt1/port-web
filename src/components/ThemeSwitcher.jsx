@@ -2,12 +2,12 @@ import React from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import PropsType from "prop-types";
 
-const ThemeSwitcher = ({ isLightMode, toggleIsLightMode }) => {
+const ThemeSwitcher = ({ theme, handleTheme }) => {
     return (
         <button
             className='text-white w-10 h-10 flex justify-center text-2xl items-center p-2 rounded-full bg-indigo-600/50'
-            onClick={toggleIsLightMode}>
-            {isLightMode ? <FaSun /> : <FaMoon />}
+            onClick={handleTheme}>
+            {theme === "dark" ? <FaMoon /> : <FaSun />}
         </button>
     );
 };

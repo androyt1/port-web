@@ -5,7 +5,7 @@ import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <div className='px-3 min-h-[calc(100vh-64px)] grid grid-cols-1 md:grid-cols-2 place-items-center    text-white '>
+        <div className='px-3 min-h-[calc(100vh-64px)] grid grid-cols-1 md:grid-cols-2 place-items-center  text-slate-800  dark:text-white '>
             <div className='flex w-full'>
                 <div className='flex  flex-col items-center justify-center w-6 h-full mr-3 md:mr-8 '>
                     <div className='w-5 h-5 md:w-10 md:h-10 bg-indigo-500 rounded-full border-t-2 border-white'></div>
@@ -17,7 +17,7 @@ const Hero = () => {
                         <br />
                         <span className='text-indigo-400'> Andrew</span>
                     </h1>
-                    <h2 className='font-normal   text-neutral-200 mt-3 md:mt-10'>
+                    <h2 className='font-normal text-slate-800   dark:text-neutral-200 mt-3 md:mt-10'>
                         <TypeAnimation
                             sequence={services}
                             wrapper='span'
