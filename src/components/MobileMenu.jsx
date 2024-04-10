@@ -1,3 +1,5 @@
+import PropsTypes from "prop-types";
+
 const MobileMenu = ({ isOpen }) => {
     return (
         <nav
@@ -13,6 +15,10 @@ const MobileMenu = ({ isOpen }) => {
             </ul>
         </nav>
     );
+};
+
+MobileMenu.propTypes = {
+    isOpen: PropsTypes.bool.isRequired,
 };
 
 export default MobileMenu;
