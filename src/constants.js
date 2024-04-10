@@ -1,11 +1,15 @@
 export const services = [
-    "Skilled in React, Next.js, TypeScript, and Redux for building robust web apps.",
+    "Node React Redux Developer.",
     5000,
-    "Experienced in state management with Redux for efficient data flow.",
+    "Next.js Expertise",
     5000,
-    "Proficient in crafting responsive UIs with modern design principles.",
+    "TypeScript Proficiency",
     5000,
-    "Passionate about staying updated with the latest JavaScript trends.",
+    "Debugging and Testing",
+    5000,
+    "Version Control",
+    5000,
+    "Build Tools Proficiency",
     5000,
 ];
 

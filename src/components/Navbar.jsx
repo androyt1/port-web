@@ -1,12 +1,18 @@
 import { useState } from "react";
 import { RiMenu3Fill, RiMenu2Line } from "react-icons/ri";
 import MobileMenu from "./MobileMenu";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isLightMode, setIsLightMode] = useState(true);
 
     const toggleIsOpen = () => {
         setIsOpen((prevState) => !prevState);
+    };
+
+    const toggleIsLightMode = () => {
+        setIsLightMode((prevState) => !prevState);
     };
 
     return (
@@ -21,17 +27,23 @@ const Navbar = () => {
                     <li>Project</li>
                     <li>Contact</li>
                 </ul>
-                {isOpen ? (
-                    <RiMenu2Line
-                        className='text-3xl text-white flex cursor-pointer md:hidden'
-                        onClick={toggleIsOpen}
+                <div className='flex gap-2 items-center'>
+                    <ThemeSwitcher
+                        isLightMode={isLightMode}
+                        toggleIsLightMode={toggleIsLightMode}
                     />
-                ) : (
-                    <RiMenu3Fill
-                        className='text-3xl text-white flex cursor-pointer md:hidden'
-                        onClick={toggleIsOpen}
-                    />
-                )}
+                    {isOpen ? (
+                        <RiMenu2Line
+                            className='text-3xl text-white flex cursor-pointer md:hidden'
+                            onClick={toggleIsOpen}
+                        />
+                    ) : (
+                        <RiMenu3Fill
+                            className='text-3xl text-white flex cursor-pointer md:hidden'
+                            onClick={toggleIsOpen}
+                        />
+                    )}
+                </div>
             </nav>
             <MobileMenu isOpen={isOpen} />
         </>

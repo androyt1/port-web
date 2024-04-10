@@ -1,6 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { services } from "../constants";
+import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
     return (
@@ -26,8 +27,9 @@ const Hero = () => {
                         />
                     </h2>
                     <div className='mt-6 md:mt-10'>
-                        <button className='py-2  bg-indigo-600 text-slate-50 px-20 md:px-24 rounded-md font-normal'>
+                        <button className='py-2  bg-indigo-600 text-slate-50 w-[200px] md:w-[250px] rounded-md font-normal flex justify-center items-center gap-2'>
                             Download Cv
+                            <FaDownload />
                         </button>
                     </div>
                 </div>
