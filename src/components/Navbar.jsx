@@ -5,9 +5,14 @@ import ThemeSwitcher from "./ThemeSwitcher";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isLightMode, setIsLightMode] = useState(true);
 
     const toggleIsOpen = () => {
         setIsOpen((prevState) => !prevState);
+    };
+
+    const toggleIsLightMode = () => {
+        setIsLightMode((prevState) => !prevState);
     };
 
     return (
@@ -23,7 +28,10 @@ const Navbar = () => {
                     <li>Contact</li>
                 </ul>
                 <div className='flex gap-2 items-center'>
-                    <ThemeSwitcher isLightMode={false} toggleIsLightMode={() => {}} />
+                    <ThemeSwitcher
+                        isLightMode={isLightMode}
+                        toggleIsLightMode={toggleIsLightMode}
+                    />
                     {isOpen ? (
                         <RiMenu2Line
                             className='text-3xl text-white flex cursor-pointer md:hidden'
