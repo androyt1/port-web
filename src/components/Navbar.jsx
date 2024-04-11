@@ -14,7 +14,7 @@ const Navbar = ({ theme, handleTheme }) => {
         <>
             <nav className='h-20  flex justify-between items-center px-3 relative bg-white dark:bg-black z-20'>
                 <div className='flex-shrink-0'>
-                    <h3 className='text-2xl font-normal text-slate-800 dark:text-neutral-200'>
+                    <h3 className='text-2xl font-semibold text-slate-800 dark:text-neutral-200'>
                         Androy
                     </h3>
                 </div>
