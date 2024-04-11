@@ -5,15 +5,15 @@ import PropsType from "prop-types";
 const ThemeSwitcher = ({ theme, handleTheme }) => {
     return (
         <button
-            className='text-white w-10 h-10 flex justify-center text-2xl items-center p-2 rounded-full bg-indigo-600/50'
+            className='text-white w-10 h-10 flex justify-center text-2xl items-center p-2 rounded-full bg-indigo-800 dark:bg-indigo-500'
             onClick={handleTheme}>
             {theme === "dark" ? <FaMoon /> : <FaSun />}
         </button>
     );
 };
 ThemeSwitcher.propTypes = {
-    isLightMode: PropsType.bool.isRequired,
-    toggleIsLightMode: PropsType.func.isRequired,
+    theme: PropsType.string.isRequired,
+    handleTheme: PropsType.func.isRequired,
 };
 
 export default ThemeSwitcher;
