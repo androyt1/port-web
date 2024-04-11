@@ -28,7 +28,7 @@ export default function App() {
 
     return (
         <div className='  relative'>
-            <div className='top-0 left-0 bottom-0 fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]'></div>
+            <div className='top-0 left-0 bottom-0 fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] flex jutify-center gap-6'></div>
             <div className='max-w-6xl mx-auto font-montserrat'>
                 <Navbar theme={theme} handleTheme={handleTheme} />
                 <Hero />
