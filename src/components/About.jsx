@@ -11,19 +11,24 @@ import {
     DiGit,
     DiJava,
 } from "react-icons/di";
-import { SiTypescript, SiGraphql } from "react-icons/si";
+import { SiTypescript, SiGraphql, SiCypress, SiJest, SiPostman, SiSelenium } from "react-icons/si";
+import { TbBrandVscode } from "react-icons/tb";
 
 const About = () => {
     return (
         <div id='about' className='pt-[90px]'>
             <section className='min-h-screen  w-full text-slate-800 dark:text-white p-3 md:p-5'>
-                <h2 className='text-5xl font-semibold mb-4'>Who I am</h2>
+                <h2 className='text-5xl font-semibold mb-4'>Know Who I am</h2>
                 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-10'>
                     <div>
                         <p>
-                            Hi Everyone, I am Soumyajit Behera from Bhubaneswar, India. I am
-                            currently employed as a software developer at Juspay. I have completed
-                            Integrated MSc (IMSc) in Maths and Computing at BIT Mesra.
+                            Hi Everyone, I am{" "}
+                            <span className='text-indigo-700 font-semibold'>
+                                Aghoghovwia Andrew
+                            </span>{" "}
+                            a Nigerian based in the Uk. I am currently employed as a software
+                            developer at Juspay. I have completed Integrated MSc (IMSc) in Maths and
+                            Computing at BIT Mesra.
                         </p>
                         <p className='mt-1'>
                             Apart from coding, some other activities that I love to do!
@@ -42,8 +47,12 @@ const About = () => {
                         </ul>
                         <p>"Strive to build things that make a difference!" Soumyajit</p>
                     </div>
-                    <div className='flex items-center justify-center'>
-                        <img src='/images/about.png' alt='' />
+                    <div className='flex items-center justify-center border-2 border-indigo-800/30 rounded-lg'>
+                        <img
+                            src='/images/about.png'
+                            alt=''
+                            className='w-full h-full object-cover '
+                        />
                     </div>
                 </div>
 
@@ -86,6 +95,15 @@ const About = () => {
                     </SkillCard>
                     <SkillCard>
                         <SiGraphql />
+                    </SkillCard>
+                    <SkillCard>
+                        <SiJest />
+                    </SkillCard>
+                    <SkillCard>
+                        <SiCypress />
+                    </SkillCard>
+                    <SkillCard>
+                        <SiSelenium />
                     </SkillCard>
                 </section>
             </section>
