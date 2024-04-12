@@ -5,9 +5,7 @@ import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <div
-            className='px-3 pt-[70px] min-h-[calc(100vh-64px)] grid grid-cols-1 md:grid-cols-2 place-items-center  text-slate-800  dark:text-white '
-            id='home'>
+        <div className='px-3  min-h-[calc(100vh-64px)] grid grid-cols-1 md:grid-cols-2 place-items-center  text-slate-800  dark:text-white  rounded-2xl'>
             <div className='flex w-full'>
                 <div
                     data-aos='fade-down'
