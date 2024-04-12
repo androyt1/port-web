@@ -9,7 +9,7 @@ const MobileMenu = ({ isOpen }) => {
             <ul
                 className={`h-[300px] flex flex-col md:hidden items-start justify-center text-white dark:text-indigo-800 py-3 gap-y-5 font-semibold `}>
                 <li className='pt-3'>
-                    <a href='#home'>Home</a>
+                    <a href='#top'>Home</a>
                 </li>
                 <li className='pt-3'>
                     <a href='#about'>About</a>
