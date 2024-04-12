@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const SkillCard = ({ children }) => {
     return (
-        <div className=' min-w-[150px] max-w-72 h-32 border flex justify-center items-center bg-white'>
+        <div className=' min-w-[150px] max-w-72 h-32 border flex justify-center items-center bg-white dark:text-indigo-800'>
             <div className='text-6xl'>{children}</div>
         </div>
     );
