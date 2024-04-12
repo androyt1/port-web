@@ -12,7 +12,7 @@ const Navbar = ({ theme, handleTheme }) => {
 
     return (
         <>
-            <nav className='sticky top-0 h-20   flex justify-between items-center px-3  bg-white dark:bg-black z-50'>
+            <nav className='sticky top-0 h-20 backdrop-blur-sm  flex justify-between items-center px-3  bg-white/50 dark:bg-black/50 z-50'>
                 <div className='flex-shrink-0'>
                     <h3 className='text-2xl font-semibold text-slate-800 dark:text-neutral-200'>
                         Androy
